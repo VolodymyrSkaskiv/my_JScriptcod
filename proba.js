@@ -4,7 +4,7 @@ let key8
 let find_key
 
 // Друк кількості варіантів ключів для k  бітних ключів 
-for(k = 16; k < 4097; k = 2*k){
+for(k = 8; k < 4097; k = 2*k){
     my_print(k)
 }
 console.log("\n")
@@ -38,7 +38,7 @@ date = new Date()
 console.log("Шуканий ключ: ", find_key, "час пошуку: ", date.getTime() - t, "мілісекунд\n")
 
 
-// Викликаємо функцію randomKey(k), де к 16, 32,64,128,256,512,1024, 2048, 4096
+// Викликаємо функцію randomKey(k), де к 8, 16, 32,64,128,256,512,1024, 2048, 4096
 function my_print(k){
     console.log(k," ",numOfKeyOptions(k))
 }
